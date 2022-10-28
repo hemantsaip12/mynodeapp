@@ -1,0 +1,29 @@
+{
+    "ServiceName": "hemant-node-app",
+    "SourceConfiguration": {
+        "AuthenticationConfiguration": {
+            "ConnectionArn": "arn:aws:apprunner:us-east-1:880066361709:connection/hemant-github-app/809fdd41cbf54130978ec79b9d324d86"
+        },
+        "AutoDeploymentsEnabled": true,
+        "CodeRepository": {
+            "RepositoryUrl": "https://github.com/hemantsaip12/mynodeapp.git",
+            "SourceCodeVersion": {
+                "Type": "BRANCH",
+                "Value": "main"
+            },
+            "CodeConfiguration": {
+                "ConfigurationSource": "API",
+                "CodeConfigurationValues": {
+                    "Runtime": "NODEJS_16",
+                    "BuildCommand": "npm install",
+                    "StartCommand": "node app.js",
+                    "Port": "3000"
+                }
+            }
+        }
+    },
+    "InstanceConfiguration": {
+        "CPU": "1 vCPU",
+        "Memory": "1 GB"
+    }
+}
