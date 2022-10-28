@@ -24,6 +24,6 @@
     },
     "InstanceConfiguration": {
         "Cpu": "1 vCPU",
-        "Memory": "1 GB"
+        "Memory": "2 GB"
     }
 }
