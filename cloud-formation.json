@@ -430,7 +430,7 @@
 
                        "         --resource WebServer ",
 
-                       "         --region ", { "Ref" : "AWS::Region" }, "\n",
+                       "         --region ", { "Ref" : "AWS::Region" }, "\n"
 
 
         ]]}}
